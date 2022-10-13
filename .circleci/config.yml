@@ -16,6 +16,26 @@ jobs:
       - run:
           name: hello
           command: |
-            echo "hello-world  this is me"
+            echo "hello-world this is me"
+
+      - run:
+          name: front end install
+          command: |
+               npm run frontend:install
+      - run:
+          name: back end install
+          command: |
+               npm run install
+
+      - run:
+          name: front end build
+          command: |
+              npm run frontend:build
+      - run:
+          name: front end build
+          command: | 
+              npm run backend:build
+
+    
 
         
