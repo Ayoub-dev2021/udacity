@@ -12,7 +12,10 @@ jobs:
       - node/install
       - checkout
       # install dependencies in both apps
+      #new Comment
       - run:
           name: hello
           command: |
-            echo "hello-world"
+            echo "hello-world  this is me"
+
+        
